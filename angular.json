@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "heroes-angular-app": {
+    "aymen-cv-app": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/heroes-angular-app",
+            "outputPath": "dist/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -60,18 +60,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "heroes-angular-app:build"
+            "browserTarget": "aymen-cv-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "heroes-angular-app:build:production"
+              "browserTarget": "aymen-cv-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "heroes-angular-app:build"
+            "browserTarget": "aymen-cv-app:build"
           }
         },
         "test": {
@@ -105,7 +105,7 @@
         }
       }
     },
-    "heroes-angular-app-e2e": {
+    "aymen-cv-app-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -114,11 +114,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "heroes-angular-app:serve"
+            "devServerTarget": "aymen-cv-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "heroes-angular-app:serve:production"
+              "devServerTarget": "aymen-cv-app:serve:production"
             }
           }
         },
@@ -134,5 +134,5 @@
       }
     }
   },
-  "defaultProject": "heroes-angular-app"
+  "defaultProject": "aymen-cv-app"
 }

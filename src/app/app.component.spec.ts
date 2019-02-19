@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'heroes-angular-app'`, () => {
+  it(`should have as title 'aymen-cv-app'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('heroes-angular-app');
+    expect(app.title).toEqual('aymen-cv-app');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to heroes-angular-app!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to aymen-cv-app!');
   });
 });
