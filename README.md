@@ -1,27 +1,51 @@
-# HeroesAngularApp
+# Introducing Aymen Ben Youssef
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.0.
+This project is a global presentation of my profile, work and previous mission, and technical skills. A contact form is available to get in touch with me and kindly leaving me a message while visiting my website.
 
-## Development server
+## Getting Started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-## Code scaffolding
+### Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Todo
 
-## Build
+### Installing
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Todo
 
-## Running unit tests
+## Running the tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Todo
 
-## Running end-to-end tests
+### Break down into end to end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Todo
 
-## Further help
+### And coding style tests
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Todo
+
+## Deployment
+
+Todo
+
+## Built With
+
+Todo
+
+
+## Authors
+
+* **Aymen BEN YOUSSEF** - *Initial work* - [PurpleBooth](https://github.com/AymenCarlos)
+AymenCarlos
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Hat tip to anyone whose code was used
+* Inspiration
+* etc
