@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <div class="well well-sm">
+        <form class="form-horizontal" [formGroup]="form">
+          <legend class="text-center">Contact Me</legend>
+          <span class="alert-success text-center">{{successMessage}}</span>
+          <!-- name -->
+          <div class="form-group" [ngClass]="displayFieldCss('name')">
+            <div class="col-sm-12">
+              <label for="name" class="control-label required">Name</label>
+              <input type="text" id="name" class="form-control" formControlName="name">
+              <app-field-error-display [displayError]="isFieldValid('name')" errorMsg="Please inform your name">
+              </app-field-error-display>
+            </div>
+          </div>
+          <!-- email -->
+          <div class="form-group" [ngClass]="displayFieldCss('email')">
+            <div class="col-sm-12">
+              <label for="email" class="control-label required">Email</label>
+              <input type="text" id="email" class="form-control" formControlName="email" email="true">
+              <app-field-error-display [displayError]="isFieldValid('email')" errorMsg="Please enter a valid email address">
+              </app-field-error-display>
+            </div>
+          </div>
+          <!-- Message body -->
+          <div class="form-group" [ngClass]="displayFieldCss('message')">
+            <div class="col-sm-12">
+              <label class="control-label" form="message">Your message</label>
+              <textarea id="contactMessage" name="message" placeholder="Please enter your message here..." class="form-control" formControlName="message" rows="7" ></textarea>
+            </div>
+          </div>
+          <!-- Form actions -->
+          <div class="form-group">
+            <div class="col-md-12 text-right">
+              <button type="submit" class="btn btn-primary" (click)="onSubmit()">Submit</button>
+              <button class="btn" (click)="reset()">Reset</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>

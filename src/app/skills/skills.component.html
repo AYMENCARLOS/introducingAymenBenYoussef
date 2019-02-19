@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div *ngFor="let skill of skills" class="skillbar">
+        <div class="skillbar-title">{{skill.name}}</div>
+        <div class="skill-bar-percent">{{skill.percentage}}%</div>
+        <div class="skillbar-bar" [ngStyle]="applyPercentage(skill.percentage)"></div>
+      </div>
+    </div>
+  </div>
+</div>

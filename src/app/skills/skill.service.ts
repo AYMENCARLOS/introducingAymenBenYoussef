@@ -3,7 +3,7 @@
  */
 
 import {Observable} from 'rxjs';
-import {Hero} from './hero';
+import {Skill} from './skill';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Injectable} from '@angular/core';
 import {HandleError} from '../http-error-handler.service';
@@ -16,28 +16,16 @@ const httpOptions = {
 };
 
 @Injectable()
-export class HeroService {
-  heroesUrl = 'api/heroes'; //url to web api
+export class SkillService {
+  skillsUrl = 'api/heroes'; //url to web api
   private handleError: HandleError;
 
   constructor(  private http: HttpClient) {
-
   }
 
   /** GET Heroes from the server  **/
-  getHeroes (): Observable<Hero[]> {
-    return this.http.get<Hero[]>(this.heroesUrl)
-     // .pipe(
-   //     catchError(this.handleError('getHeroes', []))
-  //    );
+  getSkills (): Observable<Skill[]> {
+    return this.http.get<Skill[]>(this.skillsUrl);
   }
 
-  addHero(hero : Hero):Observable<Hero>{
-    return this.http.post<Hero>(this.heroesUrl,hero,httpOptions);
-  }
-
-  deleteHero(id : number):Observable<{}>{
-    const url = `${this.heroesUrl}/${id}`;
-    return this.http.delete(url,httpOptions);
-  }
 }

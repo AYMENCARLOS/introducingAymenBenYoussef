@@ -1,7 +1,41 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>Angular Application [Aymen]</h1>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="navbar-brand"></div>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="nav navbar-nav">
+          <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+          <li><a routerLink="/skills" routerLinkActive="active">Skills</a></li>
+          <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+        </div>
+      </div>
+    </div>
+</nav>
+<div class="bg"></div>
+<div class="jumbotron">
+    <div class="container">
+      <img class="img-circle" src="assets/images/me.jpg" height="70px" width="70px">
+      <h2>{{title}}</h2>
+      <p><i><b>{{subTitle}}</b></i></p>
+    </div>
+  <div class="container">
+    <a class="socialLinks" target="_blank" href="https://www.linkedin.com/in/aymen-ben-youssef-0b947618/"><span class="fa fa-linkedin fa-2x" rel="tooltip" title="Visit me on LinkedIn" ></span></a>
+    <a class="socialLinks" target="_blank" href="https://github.com/AYMENCARLOS"><span class="fa fa-github fa-2x" style="padding-left:10px" rel="tooltip" title="Visit me on Github" ></span></a>
+  </div>
 </div>
-<div>
-  <app-heroes></app-heroes>
+<body>
+<router-outlet></router-outlet>
+</body>
+<div class="footer footer-no-nav navbar-fixed-bottom">
+  <h6>Powered and designed by <b>Aymen Ben Youssef</b> with :
+    <img class="techLogo addMore" title="Angular 7.2" src="assets/images/angularjs.png"> +
+    <img src="assets/images/bootstrap.png" class="techLogo addMore" title="Bootstrap 3.3.7">+
+    <img src="assets/images/firebase.png" class="techLogo addMore" title="Firebase" >
+  </h6>
 </div>
