@@ -15,6 +15,10 @@ import {AngularFireDatabaseModule} from 'angularfire2/database';
 import {AngularFireAuthModule} from 'angularfire2/auth';
 import {environment} from '../environments/environment';
 import { FieldErrorDisplayComponent } from './contact/field-error-display/field-error-display.component';
+import { TemplateComponent } from './template/template.component';
+import { HeaderComponent } from './template/header/header.component';
+import { FooterComponent } from './template/footer/footer.component';
+import { MenuComponent } from './template/header/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +27,10 @@ import { FieldErrorDisplayComponent } from './contact/field-error-display/field-
     BiographyComponent,
     ContactComponent,
     FieldErrorDisplayComponent,
+    TemplateComponent,
+    HeaderComponent,
+    FooterComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
