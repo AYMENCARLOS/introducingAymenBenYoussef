@@ -1,0 +1,20 @@
+.jumbotron {
+  background: url('/assets/images/wrokam-bg.jpg') no-repeat center center;
+  margin-top:40px;
+}
+
+
+.socialLinks{
+  text-decoration: none;
+  color: white;
+}
+
+.wallpoet{
+  font-family: 'Wallpoet', cursive;
+}
+
+.blue {
+  color: #607D8B;
+}
+
+

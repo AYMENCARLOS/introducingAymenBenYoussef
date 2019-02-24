@@ -1,0 +1,22 @@
+.footer {
+  text-align: center;
+  background-color: #101010;
+}
+
+.footer-text{
+  color: white;
+}
+.techLogo{
+  height: 20px;
+  width: 20px;
+}
+
+.socialLinks{
+  text-decoration: none;
+  color: white;
+}
+
+.wallpoet{
+  font-family: 'Wallpoet', cursive;
+}
+
