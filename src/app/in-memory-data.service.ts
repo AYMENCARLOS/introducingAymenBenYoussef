@@ -6,17 +6,18 @@ import { InMemoryDbService } from 'angular-in-memory-web-api';
 export class InMemoryDataService implements InMemoryDbService{
   createDb(){
     const skills = [
-      {id : 1,  name :'Java 8',  percentage:60},
-      {id : 2,  name :'Java 7',  percentage:90},
-      {id : 3,  name :'Java 6',  percentage:90},
-      {id : 4,  name :'Spring/Spring Boot', percentage:60},
-      {id : 4,  name :'JHipster', percentage:30},
-      {id : 5,  name :'Angular', percentage:70},
-      {id : 6,  name :'Oracle SGBD', percentage:80},
-      {id : 7,  name :'HTML5/CSS/DOM',  percentage:80},
-      {id : 8,  name :'Bootstrap',  percentage:60},
-      {id : 9,  name :'pl/sql',  percentage:70},
-      {id : 10, name :'Maven',  percentage:70}
+      {id : 1,  name :'Java 8', category:'Programming',percentage:60},
+      {id : 2,  name :'Java 7', category:'Programming', percentage:90},
+      {id : 3,  name :'Java 6', category:'Programming', percentage:90},
+      {id : 4,  name :'Spring/Spring Boot',category:'Framework', percentage:60},
+      {id : 6,  name :'Angular', category:'Framework',percentage:70},
+      {id : 5,  name :'JHipster', category:'Framework',percentage:30},
+      {id : 7,  name :'Oracle/pl-sql', category:'DataBase',percentage:80},
+      {id : 8,  name :'HTML5/CSS/DOM', category:'Programming', percentage:80},
+      {id : 9,  name :'Bootstrap', category:'Framework', percentage:60},
+      {id : 10,  name :'JBoss',  category:'WebServer',percentage:70},
+      {id : 11,  name :'SYBASE/T-sql',  category:'DataBase',percentage:50},
+      {id : 12,  name :'WebLogic'    ,  category:'WebServer',percentage:70},
       ];
     return {heroes: skills};
   }

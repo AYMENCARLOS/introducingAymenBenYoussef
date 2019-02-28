@@ -1,11 +1,29 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <div *ngFor="let skill of skills" class="skillbar">
-        <div class="skillbar-title">{{skill.name}}</div>
-        <div class="skill-bar-percent">{{skill.percentage}}%</div>
-        <div class="skillbar-bar" [ngStyle]="applyPercentage(skill.percentage)"></div>
-      </div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="wallpoet blue"><h4>Programming</h4></div>
+    <div *ngFor="let skill of filterCategory('Programming')"  class="skillbar">
+      <div class="skillbar-title">{{skill.name}}</div>
+      <div class="skill-bar-percent">{{skill.percentage}}%</div>
+      <div class="skillbar-bar" [ngStyle]="applyPercentage(skill.percentage)"></div>
+    </div>
+    <div class="wallpoet blue"><h4>Framework</h4></div>
+    <div *ngFor="let skill of filterCategory('Framework')"  class="skillbar">
+      <div class="skillbar-title">{{skill.name}}</div>
+      <div class="skill-bar-percent">{{skill.percentage}}%</div>
+      <div class="skillbar-bar" [ngStyle]="applyPercentage(skill.percentage)"></div>
+    </div>
+    <div class="wallpoet blue"><h4>Application Server</h4></div>
+    <div *ngFor="let skill of filterCategory('WebServer')"  class="skillbar">
+      <div class="skillbar-title">{{skill.name}}</div>
+      <div class="skill-bar-percent">{{skill.percentage}}%</div>
+      <div class="skillbar-bar" [ngStyle]="applyPercentage(skill.percentage)"></div>
+    </div>
+    <div class="wallpoet blue"><h4>DataBase</h4></div>
+    <div *ngFor="let skill of filterCategory('DataBase')"  class="skillbar">
+      <div class="skillbar-title">{{skill.name}}</div>
+      <div class="skill-bar-percent">{{skill.percentage}}%</div>
+      <div class="skillbar-bar" [ngStyle]="applyPercentage(skill.percentage)"></div>
     </div>
   </div>
 </div>
+

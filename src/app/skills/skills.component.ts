@@ -29,4 +29,9 @@ export class SkillsComponent implements OnInit {
     const styles ={'width': percentage +'%'};
     return styles;
   }
+
+  filterCategory(category:string){
+
+    return this.skills.filter(x => x.category == category);
+  }
 }

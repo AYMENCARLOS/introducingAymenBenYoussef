@@ -91,3 +91,12 @@
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
+
+
+.wallpoet{
+  font-family: 'Wallpoet', cursive;
+}
+
+.blue {
+  color: #607D8B;
+}

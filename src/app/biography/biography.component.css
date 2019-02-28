@@ -3,3 +3,36 @@
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5);
 }
+
+.panel-body{
+  font-size: 12px;
+}
+
+
+.nav-pills>li {
+  float: right;
+}
+
+
+
+.panel-heading .accordion-toggle:after {
+  font-family:'Glyphicons Halflings';
+  content:"\e114";
+  float: right;
+  color: #607D8B;
+  margin-right: 10px;
+}
+
+.panel-heading .accordion-toggle.collapsed:after {
+  content: "\e080";
+
+}
+
+.panel-heading-text{
+  margin-left: 15px;
+
+}
+
+.blue {
+  color: #607D8B;
+}

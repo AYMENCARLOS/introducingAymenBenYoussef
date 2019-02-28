@@ -1,6 +1,7 @@
 .jumbotron {
-  background: url('/assets/images/wrokam-bg.jpg') no-repeat center center;
+  background: url('/assets/images/gradient.jpg') no-repeat center center;
   margin-top:40px;
+  /*background-color:#41b6e6;*/
 }
 
 
