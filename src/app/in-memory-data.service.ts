@@ -19,7 +19,7 @@ export class InMemoryDataService implements InMemoryDbService{
       {id : 11,  name :'SYBASE/T-sql',  category:'DataBase',percentage:50},
       {id : 12,  name :'WebLogic'    ,  category:'WebServer',percentage:70},
       ];
-    return {heroes: skills};
+    return {skills: skills};
   }
 
 }

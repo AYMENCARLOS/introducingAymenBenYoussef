@@ -16,7 +16,7 @@ const httpOptions = {
 
 @Injectable()
 export class SkillService {
-  skillsUrl = 'api/heroes'; //url to web api
+  skillsUrl = 'api/skills'; //url to web api
 
 
   constructor(  private http: HttpClient) {
