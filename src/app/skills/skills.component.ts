@@ -10,7 +10,7 @@ import {SkillService} from './skill.service';
 })
 export class SkillsComponent implements OnInit {
 
-  skills: Skill[];
+  skills: Skill[]=[];
 
 
   constructor(private skillService: SkillService) { }
@@ -31,7 +31,10 @@ export class SkillsComponent implements OnInit {
   }
 
   filterCategory(category:string){
-
-    return this.skills.filter(x => x.category == category);
+         return this.skills.filter(x => (x.category.includes(category)));
   }
+
+/*   filterUndef<T>(ts: (T | undefined)[]): T[] {
+    return ts.filter((t: T | undefined): t is T => !!t)
+  }*/
 }
