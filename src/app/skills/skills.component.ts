@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Skill} from './skill';
 import {SkillService} from './skill.service';
+import {Category} from "./category";
 
 @Component({
   selector: 'app-skills',
@@ -11,12 +12,19 @@ import {SkillService} from './skill.service';
 export class SkillsComponent implements OnInit {
 
   skills: Skill[]=[];
-
+  categories: Category[]=[];
 
   constructor(private skillService: SkillService) { }
 
   ngOnInit() {
     this.getSkills();
+    this.categories= [
+      new Category(1,'Programming'),
+      new Category(2,'DataBase'),
+      new Category(3, 'Framework'),
+      new Category(4,'WebServer')
+    ];
+
   }
 
   getSkills(): void {
@@ -34,7 +42,4 @@ export class SkillsComponent implements OnInit {
          return this.skills.filter(x => (x.category.includes(category)));
   }
 
-/*   filterUndef<T>(ts: (T | undefined)[]): T[] {
-    return ts.filter((t: T | undefined): t is T => !!t)
-  }*/
 }
