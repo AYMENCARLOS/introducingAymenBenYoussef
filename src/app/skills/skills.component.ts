@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Skill} from './skill';
 import {SkillService} from './skill.service';
 import {Category} from "./category";
+import {Observable} from "rxjs";
 
 @Component({
   selector: 'app-skills',
@@ -9,7 +10,7 @@ import {Category} from "./category";
   providers : [SkillService],
   styleUrls: ['./skills.component.css']
 })
-export class SkillsComponent implements OnInit {
+export class SkillsComponent implements OnInit,OnDestroy {
 
   skills: Skill[]=[];
   categories: Category[]=[];
@@ -40,6 +41,9 @@ export class SkillsComponent implements OnInit {
 
   filterCategory(category:string){
          return this.skills.filter(x => (x.category.includes(category)));
+  }
+
+  ngOnDestroy(): void {
   }
 
 }

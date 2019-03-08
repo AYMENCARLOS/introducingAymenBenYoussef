@@ -62,7 +62,7 @@
 .skillbar-bar {
   height: 3px;
   width: 0px;
-  background: #323232;
+  background: cornflowerblue;
   transition-property: width, background-color;
 }
 

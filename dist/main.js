@@ -156,10 +156,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var angularfire2_auth__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(angularfire2_auth__WEBPACK_IMPORTED_MODULE_14__);
 /* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../environments/environment */ "./src/environments/environment.ts");
 /* harmony import */ var _contact_field_error_display_field_error_display_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./contact/field-error-display/field-error-display.component */ "./src/app/contact/field-error-display/field-error-display.component.ts");
-/* harmony import */ var _template_template_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./template/template.component */ "./src/app/template/template.component.ts");
-/* harmony import */ var _template_header_header_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./template/header/header.component */ "./src/app/template/header/header.component.ts");
-/* harmony import */ var _template_footer_footer_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./template/footer/footer.component */ "./src/app/template/footer/footer.component.ts");
-/* harmony import */ var _template_header_menu_menu_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./template/header/menu/menu.component */ "./src/app/template/header/menu/menu.component.ts");
+/* harmony import */ var _template_header_header_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./template/header/header.component */ "./src/app/template/header/header.component.ts");
+/* harmony import */ var _template_footer_footer_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./template/footer/footer.component */ "./src/app/template/footer/footer.component.ts");
+/* harmony import */ var _template_header_menu_menu_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./template/header/menu/menu.component */ "./src/app/template/header/menu/menu.component.ts");
+/* harmony import */ var _template_template_module__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./template/template.module */ "./src/app/template/template.module.ts");
 
 
 
@@ -192,16 +192,17 @@ var AppModule = /** @class */ (function () {
                 _biography_biography_component__WEBPACK_IMPORTED_MODULE_9__["BiographyComponent"],
                 _contact_contact_component__WEBPACK_IMPORTED_MODULE_10__["ContactComponent"],
                 _contact_field_error_display_field_error_display_component__WEBPACK_IMPORTED_MODULE_16__["FieldErrorDisplayComponent"],
-                _template_template_component__WEBPACK_IMPORTED_MODULE_17__["TemplateComponent"],
-                _template_header_header_component__WEBPACK_IMPORTED_MODULE_18__["HeaderComponent"],
-                _template_footer_footer_component__WEBPACK_IMPORTED_MODULE_19__["FooterComponent"],
-                _template_header_menu_menu_component__WEBPACK_IMPORTED_MODULE_20__["MenuComponent"],
+                //TemplateComponent,
+                _template_header_header_component__WEBPACK_IMPORTED_MODULE_17__["HeaderComponent"],
+                _template_footer_footer_component__WEBPACK_IMPORTED_MODULE_18__["FooterComponent"],
+                _template_header_menu_menu_component__WEBPACK_IMPORTED_MODULE_19__["MenuComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"],
                 _app_routing_module__WEBPACK_IMPORTED_MODULE_8__["AppRoutingModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_11__["FormsModule"],
+                _template_template_module__WEBPACK_IMPORTED_MODULE_20__["TemplateModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_11__["ReactiveFormsModule"],
                 angularfire2__WEBPACK_IMPORTED_MODULE_12__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_15__["environment"].firebase),
                 angularfire2_database__WEBPACK_IMPORTED_MODULE_13__["AngularFireDatabaseModule"],
@@ -237,7 +238,7 @@ module.exports = ".img-thumbnail:hover{ /* IE 9 */\r\n  -webkit-transform: scale
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"panel-group\" id=\"accordion\">\r\n  <div class=\"panel panel-default\">\r\n    <div class=\"panel-heading\">\r\n      <div class=\"row\">\r\n        <div class=\"col-md-1 pull-right\"><ul class=\"nav nav-pills\"><li><span class=\"accordion-toggle glyphicon\" data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapseOne\"></span></li></ul></div>\r\n        <div class=\"col-md-11\">\r\n          <div class=\"panel-heading-text\"><h5><i>Oct.2017 - Dec 2018   Senior Java/JEE consultant</i></h5></div>\r\n          <div class=\"panel-heading-text blue\"><b>European Investment Bank - Luxembourg</b></div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div id=\"collapseOne\" class=\"panel-collapse collapse\">\r\n      <div class=\"panel-body\">\r\n        <p>PiRat Application : EIB's central application to manage counterparts(a portfolio of more than 20 thousands clients), financial ratings and data  <a href=\"http://www.eib.org\" target=\"_blank\">Learn more about EIB.</a></p>\r\n        <p><b><i>#JEE #JSF #Seam #Ajax #SYBASE #JBoss #Scrum #SOAP #Ratings</i></b></p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div class=\"panel panel-default\">\r\n    <div class=\"panel-heading\">\r\n      <div class=\"row\">\r\n        <div class=\"col-md-1 pull-right\"><ul class=\"nav nav-pills\"><li><span class=\"accordion-toggle glyphicon\" data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapseTwo\"></span></li></ul></div>\r\n        <div class=\"col-md-11\">\r\n          <div class=\"panel-heading-text\"><h5><i>Feb.2016 - Sep.2017  Senior Java/JEE consultant</i></h5></div>\r\n          <div class=\"panel-heading-text blue\"><b>Société Générale(SGSS) - Paris</b></div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div id=\"collapseTwo\" class=\"panel-collapse collapse\">\r\n      <div class=\"panel-body\">\r\n        <p>NewBim Project: Accounting Data Management to evaluate cost & profitability of Société Générale Cost Centers<a href=\"http://www.eib.org\" target=\"_blank\">Learn more about EIB.</a></p>\r\n        <p><b><i>#JEE #JSF #RichFaces #Ajax #Oracle #WebLogic #Scrum </i></b></p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div class=\"panel panel-default\">\r\n    <div class=\"panel-heading\">\r\n      <div class=\"row\">\r\n        <div class=\"col-md-1 pull-right\"><ul class=\"nav nav-pills\"><li><span class=\"accordion-toggle glyphicon\" data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapseThree\"></span></li></ul></div>\r\n        <div class=\"col-md-11\">\r\n          <div class=\"panel-heading-text\"><h5><i>Aug.2010 - Dec.2015 : Developer & Support Engineer</i></h5></div>\r\n          <div class=\"panel-heading-text blue\"><b>Sungard Financial Systems - Tunis</b></div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div id=\"collapseThree\" class=\"panel-collapse collapse\">\r\n      <div class=\"panel-body\">\r\n        <p>Stream Ubix /Stream Instant Control : Real-Time Back-office for Derivatives (Opt/Future) <a href=\"http://www.fisglobal.com\" target=\"_blank\">Learn more about Sungard/FIS</a></p>\r\n        <p><b><i>#JEE #JMS #Oracle #C #Python #Scrum #Derivatives</i></b></p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div class=\"panel-group\" id=\"accordion\">\r\n  <div class=\"panel panel-default\">\r\n    <div class=\"panel-heading\">\r\n      <div class=\"row\">\r\n        <div class=\"col-md-1 pull-right\"><ul class=\"nav nav-pills\"><li><span class=\"accordion-toggle glyphicon\" data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapseOne\"></span></li></ul></div>\r\n        <div class=\"col-md-11\">\r\n          <div class=\"panel-heading-text\"><h5><i>Oct.2017 - Dec 2018   Senior Java/JEE consultant</i></h5></div>\r\n          <div class=\"panel-heading-text blue\"><b>European Investment Bank - Luxembourg</b></div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div id=\"collapseOne\" class=\"panel-collapse collapse\">\r\n      <div class=\"panel-body\">\r\n        <p>PiRat Application : EIB's central application to manage counterparts(a portfolio of more than 20 thousands clients), financial ratings and data  <a href=\"http://www.eib.org\" target=\"_blank\">Learn more about EIB.</a></p>\r\n        <p><b><i>#JEE #JSF #Seam #Ajax #SYBASE #JBoss #Scrum #SOAP #Ratings</i></b></p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div class=\"panel panel-default\">\r\n    <div class=\"panel-heading\">\r\n      <div class=\"row\">\r\n        <div class=\"col-md-1 pull-right\"><ul class=\"nav nav-pills\"><li><span class=\"accordion-toggle glyphicon\" data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapseTwo\"></span></li></ul></div>\r\n        <div class=\"col-md-11\">\r\n          <div class=\"panel-heading-text\"><h5><i>Feb.2016 - Sep.2017  Senior Java/JEE consultant</i></h5></div>\r\n          <div class=\"panel-heading-text blue\"><b>Société Générale(SGSS) - Paris</b></div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div id=\"collapseTwo\" class=\"panel-collapse collapse\">\r\n      <div class=\"panel-body\">\r\n        <p>NewBim Project: Accounting Data Management to evaluate cost & profitability of Société Générale Cost Centers<a href=\"http://www.societegenerale.com\" target=\"_blank\">Learn more about SG.</a></p>\r\n        <p><b><i>#JEE #JSF #RichFaces #Ajax #Oracle #WebLogic #Scrum </i></b></p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div class=\"panel panel-default\">\r\n    <div class=\"panel-heading\">\r\n      <div class=\"row\">\r\n        <div class=\"col-md-1 pull-right\"><ul class=\"nav nav-pills\"><li><span class=\"accordion-toggle glyphicon\" data-toggle=\"collapse\" data-parent=\"#accordion\" href=\"#collapseThree\"></span></li></ul></div>\r\n        <div class=\"col-md-11\">\r\n          <div class=\"panel-heading-text\"><h5><i>Aug.2010 - Dec.2015 Developer & Support Engineer</i></h5></div>\r\n          <div class=\"panel-heading-text blue\"><b>Sungard Financial Systems - Tunis</b></div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div id=\"collapseThree\" class=\"panel-collapse collapse\">\r\n      <div class=\"panel-body\">\r\n        <p>Stream Ubix /Stream Instant Control : Real-Time Back-office for Derivatives (Opt/Future) <a href=\"http://www.fisglobal.com\" target=\"_blank\">Learn more about Sungard/FIS</a></p>\r\n        <p><b><i>#JEE #JMS #Oracle #C #Python #Scrum #Derivatives</i></b></p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -455,6 +456,10 @@ var FieldErrorDisplayComponent = /** @class */ (function () {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "InMemoryDataService", function() { return InMemoryDataService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
 /*
  * Copyright (c)  Aymen Ben Youssef
  */
@@ -476,9 +481,34 @@ var InMemoryDataService = /** @class */ (function () {
             { id: 11, name: 'SYBASE/T-sql', category: 'DataBase', percentage: 50 },
             { id: 12, name: 'WebLogic', category: 'WebServer', percentage: 70 },
         ];
-        return { heroes: skills };
+        return { skills: skills };
     };
+    InMemoryDataService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
+    ], InMemoryDataService);
     return InMemoryDataService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/skills/category.ts":
+/*!************************************!*\
+  !*** ./src/app/skills/category.ts ***!
+  \************************************/
+/*! exports provided: Category */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Category", function() { return Category; });
+var Category = /** @class */ (function () {
+    function Category(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+    return Category;
 }());
 
 
@@ -513,7 +543,7 @@ var httpOptions = {
 var SkillService = /** @class */ (function () {
     function SkillService(http) {
         this.http = http;
-        this.skillsUrl = 'api/heroes'; //url to web api
+        this.skillsUrl = 'api/skills'; //url to web api
     }
     /** GET Skills from the server  **/
     SkillService.prototype.getSkills = function () {
@@ -548,7 +578,7 @@ module.exports = "/* HeroesComponent's private CSS styles */\r\n.heroes {\r\n  m
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n  <div class=\"col-md-12\">\r\n    <div class=\"wallpoet blue\"><h4>Programming</h4></div>\r\n    <div *ngFor=\"let skill of filterCategory('Programming')\"  class=\"skillbar\">\r\n      <div class=\"skillbar-title\">{{skill.name}}</div>\r\n      <div class=\"skill-bar-percent\">{{skill.percentage}}%</div>\r\n      <div class=\"skillbar-bar\" [ngStyle]=\"applyPercentage(skill.percentage)\"></div>\r\n    </div>\r\n    <div class=\"wallpoet blue\"><h4>Framework</h4></div>\r\n    <div *ngFor=\"let skill of filterCategory('Framework')\"  class=\"skillbar\">\r\n      <div class=\"skillbar-title\">{{skill.name}}</div>\r\n      <div class=\"skill-bar-percent\">{{skill.percentage}}%</div>\r\n      <div class=\"skillbar-bar\" [ngStyle]=\"applyPercentage(skill.percentage)\"></div>\r\n    </div>\r\n    <div class=\"wallpoet blue\"><h4>Application Server</h4></div>\r\n    <div *ngFor=\"let skill of filterCategory('WebServer')\"  class=\"skillbar\">\r\n      <div class=\"skillbar-title\">{{skill.name}}</div>\r\n      <div class=\"skill-bar-percent\">{{skill.percentage}}%</div>\r\n      <div class=\"skillbar-bar\" [ngStyle]=\"applyPercentage(skill.percentage)\"></div>\r\n    </div>\r\n    <div class=\"wallpoet blue\"><h4>DataBase</h4></div>\r\n    <div *ngFor=\"let skill of filterCategory('DataBase')\"  class=\"skillbar\">\r\n      <div class=\"skillbar-title\">{{skill.name}}</div>\r\n      <div class=\"skill-bar-percent\">{{skill.percentage}}%</div>\r\n      <div class=\"skillbar-bar\" [ngStyle]=\"applyPercentage(skill.percentage)\"></div>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n"
+module.exports = "<div class=\"row\">\r\n  <div class=\"col-md-12\">\r\n    <div  *ngFor=\"let cat of categories\">\r\n      <h4 class=\"wallpoet blue\" *ngIf=\"cat.name\">{{cat.name}}</h4>\r\n      <div *ngFor=\"let skill of filterCategory(cat.name)\"  class=\"skillbar\">\r\n        <div class=\"skillbar-title\">{{skill.name}}</div>\r\n        <div class=\"skill-bar-percent\">{{skill.percentage}}%</div>\r\n        <div class=\"skillbar-bar\" [ngStyle]=\"applyPercentage(skill.percentage)\"></div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n"
 
 /***/ }),
 
@@ -565,15 +595,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _skill_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./skill.service */ "./src/app/skills/skill.service.ts");
+/* harmony import */ var _category__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./category */ "./src/app/skills/category.ts");
+
 
 
 
 var SkillsComponent = /** @class */ (function () {
     function SkillsComponent(skillService) {
         this.skillService = skillService;
+        this.skills = [];
+        this.categories = [];
     }
     SkillsComponent.prototype.ngOnInit = function () {
         this.getSkills();
+        this.categories = [
+            new _category__WEBPACK_IMPORTED_MODULE_3__["Category"](1, 'Programming'),
+            new _category__WEBPACK_IMPORTED_MODULE_3__["Category"](2, 'DataBase'),
+            new _category__WEBPACK_IMPORTED_MODULE_3__["Category"](3, 'Framework'),
+            new _category__WEBPACK_IMPORTED_MODULE_3__["Category"](4, 'WebServer')
+        ];
     };
     SkillsComponent.prototype.getSkills = function () {
         var _this = this;
@@ -585,7 +625,7 @@ var SkillsComponent = /** @class */ (function () {
         return styles;
     };
     SkillsComponent.prototype.filterCategory = function (category) {
-        return this.skills.filter(function (x) { return x.category == category; });
+        return this.skills.filter(function (x) { return (x.category.includes(category)); });
     };
     SkillsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -666,7 +706,7 @@ var FooterComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".jumbotron {\r\n  background: url('/assets/images/gradient.jpg') no-repeat center center;\r\n  margin-top:40px;\r\n  /*background-color:#41b6e6;*/\r\n}\r\n\r\n\r\n.socialLinks{\r\n  text-decoration: none;\r\n  color: white;\r\n}\r\n\r\n\r\n.wallpoet{\r\n  font-family: 'Wallpoet', cursive;\r\n}\r\n\r\n\r\n.blue {\r\n  color: #607D8B;\r\n}\r\n\r\n\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdGVtcGxhdGUvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usc0VBQXNFO0VBQ3RFLGVBQWU7RUFDZiw0QkFBNEI7QUFDOUI7OztBQUdBO0VBQ0UscUJBQXFCO0VBQ3JCLFlBQVk7QUFDZDs7O0FBRUE7RUFDRSxnQ0FBZ0M7QUFDbEM7OztBQUVBO0VBQ0UsY0FBYztBQUNoQiIsImZpbGUiOiJzcmMvYXBwL3RlbXBsYXRlL2hlYWRlci9oZWFkZXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5qdW1ib3Ryb24ge1xyXG4gIGJhY2tncm91bmQ6IHVybCgnL2Fzc2V0cy9pbWFnZXMvZ3JhZGllbnQuanBnJykgbm8tcmVwZWF0IGNlbnRlciBjZW50ZXI7XHJcbiAgbWFyZ2luLXRvcDo0MHB4O1xyXG4gIC8qYmFja2dyb3VuZC1jb2xvcjojNDFiNmU2OyovXHJcbn1cclxuXHJcblxyXG4uc29jaWFsTGlua3N7XHJcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxufVxyXG5cclxuLndhbGxwb2V0e1xyXG4gIGZvbnQtZmFtaWx5OiAnV2FsbHBvZXQnLCBjdXJzaXZlO1xyXG59XHJcblxyXG4uYmx1ZSB7XHJcbiAgY29sb3I6ICM2MDdEOEI7XHJcbn1cclxuXHJcblxyXG4iXX0= */"
+module.exports = ".jumbotron {\r\n  background: url('/assets/images/gradient.jpg') no-repeat center center;\r\n  margin-top:40px;\r\n  /*background-color:#41b6e6;*/\r\n}\r\n\r\n\r\n.socialLinks{\r\n  text-decoration: none;\r\n}\r\n\r\n\r\n.wallpoet{\r\n  font-family: 'Wallpoet', cursive;\r\n}\r\n\r\n\r\n.blue {\r\n  color: #607D8B;\r\n}\r\n\r\n\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdGVtcGxhdGUvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usc0VBQXNFO0VBQ3RFLGVBQWU7RUFDZiw0QkFBNEI7QUFDOUI7OztBQUdBO0VBQ0UscUJBQXFCO0FBQ3ZCOzs7QUFFQTtFQUNFLGdDQUFnQztBQUNsQzs7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCIiwiZmlsZSI6InNyYy9hcHAvdGVtcGxhdGUvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmp1bWJvdHJvbiB7XHJcbiAgYmFja2dyb3VuZDogdXJsKCcvYXNzZXRzL2ltYWdlcy9ncmFkaWVudC5qcGcnKSBuby1yZXBlYXQgY2VudGVyIGNlbnRlcjtcclxuICBtYXJnaW4tdG9wOjQwcHg7XHJcbiAgLypiYWNrZ3JvdW5kLWNvbG9yOiM0MWI2ZTY7Ki9cclxufVxyXG5cclxuXHJcbi5zb2NpYWxMaW5rc3tcclxuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XHJcbn1cclxuXHJcbi53YWxscG9ldHtcclxuICBmb250LWZhbWlseTogJ1dhbGxwb2V0JywgY3Vyc2l2ZTtcclxufVxyXG5cclxuLmJsdWUge1xyXG4gIGNvbG9yOiAjNjA3RDhCO1xyXG59XHJcblxyXG5cclxuIl19 */"
 
 /***/ }),
 
@@ -823,6 +863,43 @@ var TemplateComponent = /** @class */ (function () {
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
     ], TemplateComponent);
     return TemplateComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/template/template.module.ts":
+/*!*********************************************!*\
+  !*** ./src/app/template/template.module.ts ***!
+  \*********************************************/
+/*! exports provided: TemplateModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TemplateModule", function() { return TemplateModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _template_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./template.component */ "./src/app/template/template.component.ts");
+
+
+
+
+var TemplateModule = /** @class */ (function () {
+    function TemplateModule() {
+    }
+    TemplateModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+            declarations: [_template_component__WEBPACK_IMPORTED_MODULE_3__["TemplateComponent"]],
+            imports: [
+                _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"]
+            ],
+            exports: [_template_component__WEBPACK_IMPORTED_MODULE_3__["TemplateComponent"]]
+        })
+    ], TemplateModule);
+    return TemplateModule;
 }());
 
 
