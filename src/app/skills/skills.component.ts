@@ -1,8 +1,9 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Skill} from './skill';
 import {SkillService} from './skill.service';
-import {Category} from "./category";
-import {Observable} from "rxjs";
+import {Category} from './category';
+import {Observable} from 'rxjs';
+import {Language} from './language';
 
 @Component({
   selector: 'app-skills',
@@ -10,22 +11,21 @@ import {Observable} from "rxjs";
   providers : [SkillService],
   styleUrls: ['./skills.component.css']
 })
-export class SkillsComponent implements OnInit,OnDestroy {
+export class SkillsComponent implements OnInit {
 
-  skills: Skill[]=[];
-  categories: Category[]=[];
+  skills: Skill[] = [];
+  categories: Category[] = [];
 
   constructor(private skillService: SkillService) { }
 
   ngOnInit() {
     this.getSkills();
-    this.categories= [
-      new Category(1,'Programming'),
-      new Category(2,'DataBase'),
+    this.categories = [
+      new Category(1, 'Programming'),
+      new Category(2, 'DataBase'),
       new Category(3, 'Framework'),
-      new Category(4,'WebServer')
+      new Category(4, 'WebServer')
     ];
-
   }
 
   getSkills(): void {
@@ -34,16 +34,13 @@ export class SkillsComponent implements OnInit,OnDestroy {
   }
 
 
-  applyPercentage(percentage: number){
-    const styles ={'width': percentage +'%'};
+  applyPercentage(percentage: number) {
+    const styles = {width: percentage + '%'};
     return styles;
   }
 
-  filterCategory(category:string){
+  filterCategory(category: string) {
          return this.skills.filter(x => (x.category.includes(category)));
-  }
-
-  ngOnDestroy(): void {
   }
 
 }

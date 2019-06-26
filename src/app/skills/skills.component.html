@@ -1,3 +1,49 @@
+<!-- You can now use it in app.component.html -->
+<div class="row">
+  <h4 class="wallpoet blue">Communication</h4>
+  <div class="col-md-4">
+    <circle-progress
+      [percent]="90"
+      [radius]="100"
+      [subtitle]="'French'"
+      [subtitleFontSize]="12"
+      [outerStrokeWidth]="16"
+      [innerStrokeWidth]="8"
+      [outerStrokeColor]="'#6495ED'"
+      [innerStrokeColor]="'#6495ED'"
+      [animation]="true"
+      [animationDuration]="300">
+    </circle-progress>
+  </div>
+  <div class="col-md-4">
+    <circle-progress
+      [percent]="70"
+      [radius]="100"
+      [subtitle]="'English'"
+      [subtitleFontSize]="12"
+      [outerStrokeWidth]="16"
+      [innerStrokeWidth]="8"
+      [outerStrokeColor]="'#6495ED'"
+      [innerStrokeColor]="'#6495ED'"
+      [animation]="true"
+      [animationDuration]="300">
+    </circle-progress>
+  </div>
+  <div class="col-md-4">
+    <circle-progress
+      [percent]="50"
+      [radius]="100"
+      [subtitle]="'Italian'"
+      [subtitleFontSize]="12"
+      [outerStrokeWidth]="16"
+      [innerStrokeWidth]="8"
+      [outerStrokeColor]="'#6495ED'"
+      [innerStrokeColor]="'#6495ED'"
+      [animation]="true"
+      [animationDuration]="300">
+    </circle-progress>
+  </div>
+</div>
 <div class="row">
   <div class="col-md-12">
     <div  *ngFor="let cat of categories">

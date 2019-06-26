@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {$} from 'protractor';
-import {FileDonwloadService} from "./file-donwload.service";
-import {SkillService} from "../skills/skill.service";
+import {FileDonwloadService} from './file-donwload.service';
 
 @Component({
   selector: 'app-biography',
@@ -16,8 +14,8 @@ export class BiographyComponent implements OnInit {
   ngOnInit() {
   }
 
-  public downloadFile(){
-    this.downloadService.downloadCv()
+  public downloadFile() {
+    this.downloadService.downloadCv();
   }
 
 }

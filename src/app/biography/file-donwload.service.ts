@@ -12,14 +12,14 @@ const httpOptions = {
 
 @Injectable()
 export class FileDonwloadService {
-  fileUrl ="assets/Files/Aymen_Ben_Youssef_Consultant__Java_J2ee_Fullstack_Engineer.pdf";
+  fileUrl = 'assets/Files/Aymen_Ben_Youssef_Consultant_Senior_Java_J2ee_June2019.pdf';
 
   constructor(private http: HttpClient) { }
 
-  public downloadCv(){
+  public downloadCv() {
 
-    let link = document.createElement("a");
-    link.download = "AymenBenYoussef-JEE/J2EE-FullStack-Engineer";
+    let link = document.createElement('a');
+    link.download = 'Aymen_Ben_Youssef_Consultant_Senior_Java_J2ee_June2019';
     link.href = this.fileUrl;
     link.click();
   }

@@ -1,5 +1,5 @@
 .jumbotron {
-  background: url('/assets/images/gradient.jpg') no-repeat center center;
+  background: linear-gradient( #BBD8DC,whitesmoke);
   margin-top:40px;
   /*background-color:#41b6e6;*/
 }
