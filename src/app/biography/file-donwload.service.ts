@@ -12,14 +12,14 @@ const httpOptions = {
 
 @Injectable()
 export class FileDonwloadService {
-  fileUrl = 'assets/Files/Aymen_Ben_Youssef_Consultant_Senior_Java_J2ee_June2019.pdf';
+  fileUrl = 'assets/Files/Aymen_Ben_Youssef_Full_Stack_Consultant.pdf';
 
   constructor(private http: HttpClient) { }
 
   public downloadCv() {
 
     let link = document.createElement('a');
-    link.download = 'Aymen_Ben_Youssef_Consultant_Senior_Java_J2ee_June2019';
+    link.download = 'Aymen_Ben_Youssef_Full_Stack_Consultant';
     link.href = this.fileUrl;
     link.click();
   }
