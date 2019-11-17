@@ -20,6 +20,7 @@ export class InMemoryDataService implements InMemoryDbService{
       {id : 10,  name :'JBoss',  category:'WebServer',percentage:70},
       {id : 11,  name :'SYBASE/T-sql',  category:'DataBase',percentage:50},
       {id : 12,  name :'WebLogic'    ,  category:'WebServer',percentage:70},
+      {id : 13,  name :'Drupal 8'    ,  category:'Framework',percentage:60},
       ];
     return {skills: skills};
   }
